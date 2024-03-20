@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Frontend Mentor Crowdfunding product page</title>
+	<link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<nav>
+		<div class="nav">
+			<a href="#"><img src="./images/logo.svg" class="nav__logo"></a>
+			<div class="nav__desktop">
+				<a href="#" class="nav__desktop--link">About</a>
+				<a href="#" class="nav__desktop--link">Discover</a>
+				<a href="#" class="nav__desktop--link">Get Started</a>
+			</div>
+			<div class="nav__mobile">
+				<button class="mobile-btn">
+					<img src="./images/icon-hamburger.svg"  class="mobile-btn__open-icon">
+					<img src="./images/icon-close-menu.svg"
+						class="mobile-btn__close-icon">
+				</button>
+				<ul class="mobile-linkbox">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Discover</a></li>
+					<li><a href="#">Get Started</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<section class="general">
+			<img src="./images/logo-mastercraft.svg" alt="" aria-hidden="true" class="general__logo">
+			<h1 class="general__heading">Mastercraft bamboo monitor riser</h1>
+			<p class="general__text">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
+			<div class="general__mark">
+				<button class="btn1">Back this project</button>
+				<button class="btn2">
+					<svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+						<g fill="none" fill-rule="evenodd">
+							<circle id='circle2' fill="#2F2F2F" cx="28" cy="28" r="28" />
+							<path id='circle1' fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+						</g>
+					</svg>
+					<span class="btn2__text">Bookmark</span>
+				</button>
+			</div>
+		</section>
+
+		<section class="backers">
+			<div class="textarea">
+				<div class="textarea__container">
+					<p class="textarea__container--text1"></p>
+					<p class="textarea__container--text2">of $100,000 backed</p>
+				</div>
+				<div class="textarea__container">
+					<p class="textarea__container--text1"></p>
+					<p class="textarea__container--text2">total backers</p>
+				</div>
+				<div class="textarea__container">
+					<p class="textarea__container--text1">56</p>
+					<p class="textarea__container--text2">days left</p>
+				</div>
+			</div>
+			<div class="backers__progress-bar">
+				<span class="backers__progress-bar--bar"></span>
+			</div>
+		</section>
+
+		<section class="about">
+			<h2 class="about__heading">About this project</h2>
+			<p class="about__text">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that
+				elevates
+				your screen to a more comfortable viewing heigth. Placing your monitor at eye level has the
+				potential to
+				improve your posture and make you more comfortable while at work, helping you stay focused on the
+				task
+				at hand.</p>
+			<p class="about__text">Featuring artisan craftsmanship, the simplicity of design creates extra desk
+				space
+				below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+
+			<div class="product">
+				<div class="product__top">
+					<h3 class="product__top--heading"></h3>
+					<p class="product__top--price-text"></p>
+				</div>
+				<p class="product__text"></p>
+				<div class="product__bottom">
+					<div class="product__bottom--amount"><span class="number"></span><span class="left">left</span>
+					</div>
+					<button class="product__bottom--btn">Select Reward</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<div class="product__top">
+					<h3 class="product__top--heading"></h3>
+					<p class="product__top--price-text"></p>
+				</div>
+				<p class="product__text"></p>
+				<div class="product__bottom">
+					<div class="product__bottom--amount"><span class="number"></span><span class="left">left</span>
+					</div>
+					<button class="product__bottom--btn">Select Reward</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<div class="product__top">
+					<h3 class="product__top--heading"></h3>
+					<p class="product__top--price-text"></p>
+				</div>
+				<p class="product__text"></p>
+				<div class="product__bottom">
+					<div class="product__bottom--amount"><span class="number"></span><span class="left">left</span>
+					</div>
+					<button class="product__bottom--btn">Select Reward</button>
+				</div>
+			</div>
+		</section>
+
+		<dialog id="back-dialog" class="back-dialog">
+			<div class="back-dialog__heading">
+				<h3 class="back-dialog__heading--text">Back this project</h3>
+				<img src="./images/icon-close-modal.svg" alt="close icon" class="back-dialog__heading--close-icon">
+			</div>
+			<p class="back-dialog__text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the
+				world?</p>
+
+			<form method="dialog" class="form-dialog">
+				<div class="product-dialog">
+					<div class="product-info">
+						<input type="radio" name="no-reward" id="no-reward" value="" class="product-info__input">
+						<div class="product-info__textarea">
+							<label for="no-reward" class="product-info__textarea--label">Pledge with no
+								reward</label>
+						</div>
+					</div>
+					<div class="product-text">
+						<p class="product-text__text">Choose to support us without a reward if you simply believe in
+							our project. As a backer, you will be signed up to receive product updates via email.
+						</p>
+					</div>
+					<div class="product-pledge">
+						<label for="pledge-noreward" class="product-pledge__text">Enter your pledge</label>
+						<div class="pledge-container">
+							<div class="pledge-container__input-area">
+								<span class="pledge-container__input-area--dollar-sign">$</span>
+								<input type="number" min='1' name="pledge" id="pledge-noreward"
+									class="pledge-container__input-area--input">
+							</div>
+							<button type="submit" class="pledge-container__submit">Continue</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-dialog">
+					<div class="product-info">
+						<input type="radio" name="no-reward" id="pledge-25" value="" class="product-info__input">
+						<div class="product-info__textarea">
+							<label for="pledge-25" class="product-info__textarea--label"></label>
+							<p class="product-info__textarea--pledge"></p>
+						</div>
+					</div>
+					<div class="product-text">
+						<p class="product-text__text"></p>
+					</div>
+					<div class="product-stock"><span class="product-stock__number"></span><span
+							class="product-stock__left">left</span>
+					</div>
+					<div class="product-pledge">
+						<label for="pledge-bamboo" class="product-pledge__text">Enter your pledge</label>
+						<div class="pledge-container">
+							<div class="pledge-container__input-area">
+								<span class="pledge-container__input-area--dollar-sign">$</span>
+								<input type="number" min='25' name="pledge" id="pledge-bamboo"
+									class="pledge-container__input-area--input">
+							</div>
+							<button type="submit" class="pledge-container__submit" data-id="1">Continue</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-dialog">
+					<div class="product-info">
+						<input type="radio" name="no-reward" id="pledge-75" value="" class="product-info__input">
+						<div class="product-info__textarea">
+							<label for="pledge-75" class="product-info__textarea--label"></label>
+							<p class="product-info__textarea--pledge"></p>
+						</div>
+					</div>
+					<div class="product-text">
+						<p class="product-text__text"></p>
+					</div>
+					<div class="product-stock"><span class="product-stock__number"></span><span
+							class="product-stock__left">left</span>
+					</div>
+					<div class="product-pledge">
+						<label for="pledge-black" class="product-pledge__text">Enter your pledge</label>
+						<div class="pledge-container">
+							<div class="pledge-container__input-area">
+								<span class="pledge-container__input-area--dollar-sign">$</span>
+								<input type="number" min='75' name="pledge" id="pledge-black"
+									class="pledge-container__input-area--input">
+							</div>
+							<button type="submit" class="pledge-container__submit" data-id="2">Continue</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-dialog">
+					<div class="product-info">
+						<input type="radio" name="no-reward" id="pledge-200" value="" class="product-info__input">
+						<div class="product-info__textarea">
+							<label for="pledge-200" class="product-info__textarea--label"></label>
+							<p class="product-info__textarea--pledge"></p>
+						</div>
+					</div>
+					<div class="product-text">
+						<p class="product-text__text"></p>
+					</div>
+					<div class="product-stock"><span class="product-stock__number"></span><span
+							class="product-stock__left">left</span>
+					</div>
+					<div class="product-pledge">
+						<label for="pledge-mahogany" class="product-pledge__text">Enter your pledge</label>
+						<div class="pledge-container">
+							<div class="pledge-container__input-area">
+								<span class="pledge-container__input-area--dollar-sign">$</span>
+								<input type="number" min='200' name="pledge" id="pledge-mahogany"
+									class="pledge-container__input-area--input">
+							</div>
+							<button type="submit" class="pledge-container__submit" data-id="3">Continue</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</dialog>
+
+		<dialog id='result-dialog' class="result-dialog">
+			<img src="./images/icon-check.svg" alt="" aria-hidden="true" class="result-dialog__img">
+			<h3 class="result-dialog__heading">Thanks for your support!</h3>
+			<p class="result-dialog__text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor
+				Riser worldwide. You will get an email once our campaign is completed.</p>
+			<button class="result-dialog__btn">Got it!</button>
+		</dialog>
+
+	</main>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
